@@ -1,6 +1,6 @@
 # CA2021Fall
 
-## Testing for CA hw.
+## Testing for Computer Architecture hw.
 ### Structure of dir
 ```
 hw_no/
