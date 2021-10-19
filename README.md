@@ -9,11 +9,10 @@ hw_no/
 │   └── sample.txt (input files)
 ├── output
 │   └── sample.txt (output files)
-├── bin
-│   └── your binary file
+├── your_file.s
 └── test.py
 ```
-- Prerequisite: an execution file in bin.
+- Prerequisite: an assembly file in hw_no.
 - Usage:
 ```
   cd hw_no
