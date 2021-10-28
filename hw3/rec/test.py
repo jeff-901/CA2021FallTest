@@ -7,6 +7,7 @@ files = os.listdir()
 for f in files:
     if f[-2:] == ".s" or f[-2:] == ".S":
         SCRIPT_NAME = f
+        break
 
 class Test(unittest.TestCase):
     def setUp(self):
