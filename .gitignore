@@ -3,3 +3,7 @@ lecture/
 *.s
 *.S
 *.doc*
+*.v
+a.out
+hw4/output*
+hw4/log*
