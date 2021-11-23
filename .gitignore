@@ -8,3 +8,5 @@ lecture/
 a.out
 hw4/output*
 hw4/log*
+*.out
+*.vcd
