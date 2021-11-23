@@ -4,3 +4,7 @@ lecture/
 *.S
 *.doc*
 *.zip
+*.v
+a.out
+hw4/output*
+hw4/log*
