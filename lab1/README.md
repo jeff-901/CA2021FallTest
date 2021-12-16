@@ -6,7 +6,7 @@ Please put `CPU.out` here and run `python test.py`.
 
 ## 怎麼生測資？
 
-把指令寫進 `instruction.txt`，只需要寫指令，不需要寫 0101，例如
+把指令寫進 `instruction_raw.txt`，只需要寫指令，不需要寫 0101，例如
 
 ```
 addi x4,x0,10

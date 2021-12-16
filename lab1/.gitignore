@@ -2,4 +2,5 @@ CPU.out
 CPU.vcd
 output.txt
 instruction.txt
+instruction_raw.txt
 instruction_generated.txt

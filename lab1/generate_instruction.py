@@ -92,7 +92,7 @@ def assemble(instruction: str):
 
 
 if __name__ == "__main__":
-    with open("instruction.txt") as fin, open("instruction_generated.txt", "w") as fout:
+    with open("instruction_raw.txt") as fin, open("instruction_generated.txt", "w") as fout:
         for line in fin:
             assembly = assemble(line)
             fout.write(assembly.ljust(38) + "// " + line)
