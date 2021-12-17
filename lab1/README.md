@@ -47,3 +47,7 @@ sw x17, 4(x0)
 把 `instruction_generated.txt` 移動進 `input` 資料夾裡並取名為 `instruction_{id}.txt`。
 
 把這個測資的答案放進 `output` 資料夾取名為 `output_{id}.txt`。
+
+註：
+
+`beq` 請把 label 的部份換成 `#{line_number}` 的形式。例如 `beq x5,x0,#7` 表示如果 `x5` 和 `x7` 一樣的話會跳到第 7 行的指令。

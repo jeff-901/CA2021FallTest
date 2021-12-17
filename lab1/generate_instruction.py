@@ -27,7 +27,7 @@ def parse_imm_reg(s: str):
     reg = s[(l_idx + 1):r_idx].strip()
     return imm, reg
 
-def assemble(instruction: str):
+def assemble(instruction: str, instruction_num: int):
     """Assemble an instruction, return its assembly code."""
     assembly_table = {
         "and": "0000000_{rs2}_{rs1}_111_{rd}_0110011",
@@ -76,9 +76,11 @@ def assemble(instruction: str):
                                    imm_11_5=imm_11_5,
                                    imm_4_0=imm_4_0)
     elif operation == "beq":
-        rs1, rs2, imm = tokens
+        rs1, rs2, line_num = tokens
         rs1 = reg_encode(rs1)
         rs2 = reg_encode(rs2)
+        assert line_num[0] == "#"
+        imm = str((int(line_num[1:]) - 1 - instruction_num) * 4)
         imm = imm_encode(imm)
         imm_12_10_5 = imm[-13] + imm[-11:-5]
         imm_4_1_11 = imm[-5:-1] + imm[-12]
@@ -93,6 +95,6 @@ def assemble(instruction: str):
 
 if __name__ == "__main__":
     with open("instruction_raw.txt") as fin, open("instruction_generated.txt", "w") as fout:
-        for line in fin:
-            assembly = assemble(line)
+        for i, line in enumerate(fin):
+            assembly = assemble(line, i)
             fout.write(assembly.ljust(38) + "// " + line)
