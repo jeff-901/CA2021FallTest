@@ -11,7 +11,7 @@ for i in range(total):
     subprocess.getoutput("jupiter code.s --dump-code code.txt")
     os.system(f"python3 hexToBin.py code.txt > instruction.txt")
 
-    subprocess.getoutput("./a.out")
+    subprocess.getoutput("./CPU.out")
 
     output = subprocess.getoutput("diff output.txt output_gen.txt")
     if output != "":
