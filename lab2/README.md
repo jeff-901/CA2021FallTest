@@ -46,7 +46,7 @@ sw x17, 4(x0)
 
 把 `instruction_generated.txt` 移動進 `input` 資料夾裡並取名為 `instruction_{id}.txt`。
 
-把這個測資的答案放進 `output` 資料夾取名為 `output_{id}.txt`。
+把這個測資的答案放進 `output` 資料夾取名為 `output_{id}.txt` 和 `cache_{id}.txt`。
 
 註：
 
