@@ -1,0 +1,7 @@
+Cycle:           3, Read Miss , Address: 00000000, Read Data : xxxxxxxx
+Cycle:          18, Read Hit  , Address: 00000004, Read Data : ccccdddd
+Cycle:          21, Read Hit  , Address: 00000008, Read Data : aaaabbbb
+Cycle:          24, Read Hit  , Address: 0000000c, Read Data : 88889999
+Cycle:          31, Read Hit  , Address: 00000000, Read Data : eeeeffff
+Cycle:          33, Read Hit  , Address: 00000000, Read Data : eeeeffff
+Cycle:          35, Read Hit  , Address: 00000000, Read Data : eeeeffff
