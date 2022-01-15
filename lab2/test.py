@@ -37,8 +37,9 @@ for input_file in input_files:
     with open(os.path.join("output", output_file_name), "r") as f:
         ans_lines = f.readlines()
     output_passed = True
-    for i in range(-1, -23, -1):
+    for i in range(-1, -20, -1):
         if ans_lines[i] != output_lines[i]:
+            # print(ans_lines[i], output_lines[i])
             output_passed = False
             break
 
@@ -51,9 +52,11 @@ for input_file in input_files:
         cache_passed = False
     else:
         for i in range(len(ans_lines)):
-            if ans_lines[i].split(",")[1] != output_lines[i].split(",")[1]:
-                cache_passed = False
-                break
+            for j in range(1, 4):
+                if ans_lines[i].split(",")[j] != output_lines[i].split(",")[j]:
+                    print(ans_lines[i], output_lines[i])
+                    cache_passed = False
+                    break
     # output_passed = filecmp.cmp("output.txt", os.path.join("output", output_file_name))
     # cache_passed = filecmp.cmp("cache.txt", os.path.join("output", cache_file_name))
     if output_passed and cache_passed:
