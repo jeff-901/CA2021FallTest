@@ -32,8 +32,30 @@ for input_file in input_files:
     cache_file_name = f"cache_{test_id}.txt"
     shutil.copyfile(os.path.join("input", input_file), "instruction.txt")
     subprocess.run(["./CPU.out"], stdout=subprocess.DEVNULL)
-    output_passed = filecmp.cmp("output.txt", os.path.join("output", output_file_name))
-    cache_passed = filecmp.cmp("cache.txt", os.path.join("output", cache_file_name))
+    with open("output.txt", "r") as f:
+        output_lines = f.readlines()
+    with open(os.path.join("output", output_file_name), "r") as f:
+        ans_lines = f.readlines()
+    output_passed = True
+    for i in range(-1, -23, -1):
+        if ans_lines[i] != output_lines[i]:
+            output_passed = False
+            break
+
+    with open("cache.txt", "r") as f:
+        output_lines = f.readlines()
+    with open(os.path.join("output", cache_file_name), "r") as f:
+        ans_lines = f.readlines()
+    cache_passed = True
+    if len(ans_lines) != len(output_lines):
+        cache_passed = False
+    else:
+        for i in range(len(ans_lines)):
+            if ans_lines[i].split(",")[1] != output_lines[i].split(",")[1]:
+                cache_passed = False
+                break
+    # output_passed = filecmp.cmp("output.txt", os.path.join("output", output_file_name))
+    # cache_passed = filecmp.cmp("cache.txt", os.path.join("output", cache_file_name))
     if output_passed and cache_passed:
         print("Passed")
     else:
