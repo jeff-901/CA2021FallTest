@@ -1,0 +1,56 @@
+Cycle:           3, Read Miss , Address: 00000000, Read Data : xxxxxxxx
+Cycle:          17, Read Hit  , Address: 00000004, Read Data : ccccdddd
+Cycle:          18, Read Hit  , Address: 00000008, Read Data : aaaabbbb
+Cycle:          19, Read Hit  , Address: 0000000c, Read Data : 88889999
+Cycle:          20, Read Hit  , Address: 00000010, Read Data : 66667777
+Cycle:          21, Read Hit  , Address: 00000014, Read Data : 44445555
+Cycle:          22, Read Hit  , Address: 00000018, Read Data : 22223333
+Cycle:          23, Read Hit  , Address: 0000001c, Read Data : 00001111
+Cycle:          42, Write Hit , Address: 00000000, Write Data: eeef0010
+Cycle:          43, Write Hit , Address: 00000004, Write Data: ccccddee
+Cycle:          44, Write Hit , Address: 00000008, Write Data: aaaabbcc
+Cycle:          45, Write Hit , Address: 0000000c, Write Data: 888899aa
+Cycle:          46, Write Miss, Address: 00000400, Write Data: eeef0010
+Cycle:          60, Write Hit , Address: 00000404, Write Data: ccccddee
+Cycle:          61, Write Hit , Address: 00000408, Write Data: aaaabbcc
+Cycle:          62, Write Hit , Address: 0000040c, Write Data: 888899aa
+Cycle:          63, Write Hit , Address: 00000410, Write Data: 66667788
+Cycle:          64, Write Hit , Address: 00000414, Write Data: 44445566
+Cycle:          65, Write Hit , Address: 00000418, Write Data: 22223344
+Cycle:          66, Write Hit , Address: 0000041c, Write Data: 00001122
+Cycle:          67, Read Hit  , Address: 00000400, Read Data : eeef0010
+Cycle:          68, Read Hit  , Address: 00000404, Read Data : ccccddee
+Cycle:          69, Read Hit  , Address: 00000408, Read Data : aaaabbcc
+Cycle:          70, Read Hit  , Address: 0000040c, Read Data : 888899aa
+Cycle:          71, Read Hit  , Address: 00000410, Read Data : 66667788
+Cycle:          73, Read Hit  , Address: 00000414, Read Data : 44445566
+Cycle:          74, Read Hit  , Address: 00000418, Read Data : 22223344
+Cycle:          75, Read Hit  , Address: 0000041c, Read Data : 00001122
+Cycle:          76, Write Hit , Address: 00000010, Write Data: 66667788
+Cycle:          77, Write Hit , Address: 00000014, Write Data: 44445566
+Cycle:          78, Write Hit , Address: 00000018, Write Data: 22223344
+Cycle:          79, Write Hit , Address: 0000001c, Write Data: 00001122
+Cycle:          80, Write Miss, Address: 00000200, Write Data: eeef0010 (Write Back!)
+Cycle:         104, Write Hit , Address: 00000204, Write Data: ccccddee
+Cycle:         105, Write Hit , Address: 00000208, Write Data: aaaabbcc
+Cycle:         106, Write Hit , Address: 0000020c, Write Data: 888899aa
+Cycle:         107, Write Hit , Address: 00000210, Write Data: 66667788
+Cycle:         108, Write Hit , Address: 00000214, Write Data: 44445566
+Cycle:         109, Write Hit , Address: 00000218, Write Data: 22223344
+Cycle:         110, Write Hit , Address: 0000021c, Write Data: 00001122
+Cycle:         119, Write Miss, Address: 00000400, Write Data: 00000100 (Write Back!)
+Cycle:         143, Write Hit , Address: 00000404, Write Data: aaaaaaaa
+Cycle:         144, Write Hit , Address: 00000408, Write Data: 00001000
+Cycle:         145, Write Hit , Address: 0000040c, Write Data: 00000100
+Cycle:         146, Write Hit , Address: 00000410, Write Data: aaaaaaaa
+Cycle:         147, Write Hit , Address: 00000414, Write Data: 00001000
+Cycle:         148, Write Hit , Address: 00000418, Write Data: 00000100
+Cycle:         149, Write Hit , Address: 0000041c, Write Data: aaaaaaaa
+Cycle:         150, Write Miss, Address: 00000000, Write Data: eeef0021 (Write Back!)
+Cycle:         174, Write Hit , Address: 00000004, Write Data: ccccddff
+Cycle:         175, Write Hit , Address: 00000008, Write Data: aaaabbdd
+Cycle:         176, Write Hit , Address: 0000000c, Write Data: 888899bb
+Cycle:         177, Write Hit , Address: 00000010, Write Data: 66667799
+Cycle:         178, Write Hit , Address: 00000014, Write Data: 44445577
+Cycle:         179, Write Hit , Address: 00000018, Write Data: 22223355
+Cycle:         180, Write Hit , Address: 0000001c, Write Data: 00001133
