@@ -19,9 +19,11 @@ for input_file in input_files:
     output_file_name = f"output_{test_id}.txt"
     cache_file_name = f"cache_{test_id}.txt"
     if not os.path.exists(os.path.join("output", output_file_name)):
-        raise ValueError(f"{input_file} exists but {output_file_name} does not exist")
+        raise ValueError(
+            f"{input_file} exists but {output_file_name} does not exist")
     if not os.path.exists(os.path.join("output", cache_file_name)):
-        raise ValueError(f"{input_file} exists but {cache_file_name} does not exist")
+        raise ValueError(
+            f"{input_file} exists but {cache_file_name} does not exist")
 
 # Execute tests
 for input_file in input_files:
@@ -62,13 +64,13 @@ for input_file in input_files:
         print("Passed")
     else:
         print("Failed")
-        failed_tests.append(input_file)
+        failed_tests.append((input_file, output_passed, cache_passed))
 
 # Output result
 print("=" * 40)
 print("Result:")
 if failed_tests:
-    for test_name in failed_tests:
-        print(f"Test {test_name} failed!")
+    for test_name, output_passed, cache_passed in failed_tests:
+        print(f"Test {test_name} failed! ({output_passed=}, {cache_passed=})")
 else:
     print("All tests passed!")
