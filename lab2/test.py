@@ -52,11 +52,10 @@ for input_file in input_files:
         cache_passed = False
     else:
         for i in range(len(ans_lines)):
-            for j in range(1, 4):
-                if ans_lines[i].split(",")[j] != output_lines[i].split(",")[j]:
-                    print(ans_lines[i], output_lines[i])
-                    cache_passed = False
-                    break
+            if ans_lines[i].split(",")[1] != output_lines[i].split(",")[1]:
+                print(ans_lines[i], output_lines[i])
+                cache_passed = False
+                break
     # output_passed = filecmp.cmp("output.txt", os.path.join("output", output_file_name))
     # cache_passed = filecmp.cmp("cache.txt", os.path.join("output", cache_file_name))
     if output_passed and cache_passed:
